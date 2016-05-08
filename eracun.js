@@ -213,6 +213,7 @@ streznik.post('/prijava', function(zahteva, odgovor) {
       //stmt.finalize();
       stmt.run(polja.FirstName, polja.LastName, polja.Company, polja.Address, polja.City, polja.State, polja.Country, polja.PostalCode, polja.Phone, polja.Fax, polja.Email, 3);
       stmt.finalize();
+      
     } catch (err) {
       napaka2 = true;
     }
